@@ -35,7 +35,7 @@ export const Footer = () => {
             </h1>
           </div>
         </div>
-        <div className="flex flex-col-reverse m-auto mm:m-0 mm:flex-row justify-evenly ">
+        <div className="flex flex-col-reverse m-auto items-center mm:m-0 mm:flex-row justify-evenly ">
           <div className="flex text-center gap-[40px] xl:gap-20">
             <div>
               <h1 className="text-3xl cs:text-4xl xl:text-5xl font-jostSemiBold mb-[24px] cs:mb-8 xl:mb-10">
