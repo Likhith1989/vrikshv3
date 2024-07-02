@@ -36,3 +36,38 @@
   font-family: "Poppins-Bold";
   src: url("./assets/fonts/poppins/Poppins-Bold.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "Gilroy-Light";
+  src: url("./assets/fonts/gilroy/Gilroy-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy-Bold";
+  src: url("./assets/fonts/gilroy/Gilroy-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy-XBold";
+  src: url("./assets/fonts/gilroy/Gilroy-ExtraBold.ttf") format("truetype");
+  font-weight: bolder;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "inter-Bold";
+  src: url("./assets/fonts/inter/Inter-Bold.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "inter-Normal";
+  src: url("./assets/fonts/inter/Inter-Regular.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}

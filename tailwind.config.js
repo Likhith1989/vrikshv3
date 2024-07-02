@@ -14,11 +14,15 @@ export default {
         jostMedium: ["Jost-Medium"],
         poppinsBold: ["Poppins-Bold"],
         poppinsExtraBold: ["Poppins-ExtraBold"],
+        jost: ["Jost"],
+        inter: ["Inter"],
       },
       colors: {
         "custom-green1": "rgba(30, 58, 43, 1)",
         "custom-green2": "rgba(126, 217, 87, 1)",
         "custom-orange": "rgba(255, 250, 233, 0.93)",
+        "green-bg": "rgba(30, 58, 43, 1)",
+        "green-bg2": "rgba(73, 119, 53, 1)",
       },
       screens: {
         xs: "480px",
