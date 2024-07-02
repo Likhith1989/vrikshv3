@@ -1,8 +1,8 @@
 import React from "react";
-import img1 from "../assets/vk0.jpg";
-import img2 from "../assets/vk1.jpg";
-import img3 from "../assets/vk3.jpg";
-import img4 from "../assets/vk4.jpg";
+import img1 from "../assets/vk0.png";
+import img2 from "../assets/vk1.png";
+import img3 from "../assets/vk3.png";
+import img4 from "../assets/vk4.png";
 
 const AboutSection = ({ title, description, image, reverse }) => {
   return (
