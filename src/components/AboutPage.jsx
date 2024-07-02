@@ -4,72 +4,86 @@ import img2 from "../assets/vk1.png";
 import img3 from "../assets/vk3.png";
 import img4 from "../assets/vk4.png";
 
-const AboutSection = ({ title, description, image, reverse }) => {
-  return (
-    <div
-      className={`flex flex-col ${
-        reverse ? "md:flex-row-reverse" : ""
-      } mb-8 items-center md:flex-row`}
-    >
-      <div
-        className={`w-full md:w-1/2 mb-6 md:mb-0 ${
-          reverse ? "md:ml-4" : "md:mr-4"
-        }`}
-      >
-        <div className="w-full">
-          <img
-            src={image}
-            alt={title}
-            className="w-full object-cover rounded-lg shadow-lg"
-            style={{ maxHeight: "300px" }}
-          />
-        </div>
-      </div>
-      <div
-        className={` md:w-1/2 flex items-center ${
-          reverse ? "md:mr-4" : "md:ml-4"
-        }`}
-      >
-        <div className=" w-full md:h-auto h-auto flex flex-col justify-center ">
-          <h2 className="text-3xl font-jostBold mb-2 text-[#1E3A2B]">
-            {title}
-          </h2>
-          <p className="text-gray-700 text-lg">{description}</p>
-        </div>
-      </div>
-    </div>
-  );
-};
-
 export const AboutPage = () => {
   return (
-    <div className="container mx-auto px-4 py-4 my-2">
-      <h1 className="text-5xl font-jostBold text-left mb-8 text-[#1E3A2B]">
+    <div
+      className="md:w-auto w-auto md:mx-auto mx-auto"
+      style={{ backgroundColor: "#f8f4f0" }}
+    >
+      <div className="cursor-default mt[54px] w-[310px] h-[71px] mx-auto text-center text-[57px] text-[#1E3A2B] font-[Gilroy-Bold] md:pt-[30px] pt-[15px]">
         About Us
-      </h1>
-      <div className="flex flex-col">
-        <AboutSection
-          title="Community Engagement"
-          description="We believe in the power of community-driven initiatives. By partnering with local communities, and businesses, we not only plant trees but also foster a sense of environmental stewardship. We actively involve our community every step of the way."
-          image={img1}
-        />
-        <AboutSection
-          title="Eco-conscious Mission"
-          description="At Vriksh, we're driven by a profound commitment to environmental sustainability. Our mission is to create a greener, healthier world for generations to come."
-          image={img2}
-          reverse
-        />
-        <AboutSection
-          title="Expertise and Experience"
-          description="Our team consists of dedicated professionals who understand the intricate balance of ecosystems. By selecting the right species for your location and techniques, we bring expertise to every project, guaranteeing the long-term health and vitality of your trees."
-          image={img3}
-        />
-        <AboutSection
-          title="Transparency and Accountability"
-          description="At Vriksh, transparency is key. We provide our clients with detailed insights into our tree planting processes and ensure accountability by regularly monitoring the growth and development of the trees."
-          image={img4}
-          reverse
-        />
+      </div>
+
+      <div className="mx-auto mt-[69px] md:flex block w-[90%]">
+        <div className="md:w-[630px] w-[auto] my-[20px] mx-auto">
+          <img className=" rounded-[20px]" src={img1} alt="image1 not found" />
+        </div>
+        <div className="md:w-[50%] md:h-[auto] h-full my-auto md:ml-[37px] w-[auto]">
+          <h1 className="text-[#1E3A2B] md:text-[42px] text-[38px] mt-[34px] font-[Gilroy-XBold] text-left">
+            Community Engagement
+          </h1>
+          <p className="font-[Gilroy-Light] md:text-[22px] text-[16px] text-left">
+            We believe in the power of community-driven initiatives. By
+            partnering with local communities, and businesses, we not only plant
+            trees but also foster a sense of environmental stewardship. We
+            actively involve our community every step of the way.
+          </p>
+        </div>
+      </div>
+
+      <div className="mx-auto mt-[69px] md:flex block w-[90%] justify-between">
+        <div className="md:hidden flex md:w-[630px] w-[auto] my-[20px] mx-auto">
+          <img className="rounded-[20px]" src={img2} alt="image2 not found" />
+        </div>
+        <div className="md:w-[50%] md:h-[auto] h-full my-auto md:mr-[37px] w-[auto]">
+          <h1 className="text-[#1E3A2B] md:text-[42px] text-[38px] mt-[34px] font-[Gilroy-XBold] text-right">
+            Eco-conscious Mission
+          </h1>
+          <p className="font-[Gilroy-Light] md:text-[22px] text-[16px] text-right">
+            Our team consists of dedicated professionals who understand the
+            intricate balance of ecosystems. By selecting the right species for
+            your location and techniques, we bring expertise to every project,
+            guaranteeing the long-term health and vitality of your trees.
+          </p>
+        </div>
+        <div className="md:flex hidden md:w-[630px] w-[auto] my-[20px] mx-auto">
+          <img className="rounded-[20px]" src={img2} alt="image2 not found" />
+        </div>
+      </div>
+      <div className="mx-auto mt-[69px] md:flex block w-[90%]">
+        <div className="md:w-[630px] w-[auto] my-[20px] mx-auto">
+          <img className=" rounded-[20px]" src={img3} alt="image1 not found" />
+        </div>
+        <div className="md:w-[50%] md:h-[auto] h-full my-auto md:ml-[37px] w-[auto]">
+          <h1 className="text-[#1E3A2B] md:text-[42px] text-[38px] mt-[34px] font-[Gilroy-XBold] text-left">
+            Expertise and Experience
+          </h1>
+          <p className="font-[Gilroy-Light] md:text-[22px] text-[16px] text-left">
+            Our team consists of dedicated professionals who understand the
+            intricate balance of ecosystems. By selecting the right species for
+            your location and techniques, we bring expertise to every project,
+            guaranteeing the long-term health and vitality of your trees.
+          </p>
+        </div>
+      </div>
+
+      <div className="mx-auto mt-[69px] md:flex block w-[90%] justify-between">
+        <div className="md:hidden flex md:w-[630px] w-[auto] my-[20px] mx-auto">
+          <img className="rounded-[20px]" src={img4} alt="image2 not found" />
+        </div>
+        <div className="md:w-[50%] md:h-[auto] h-full my-auto md:mr-[37px] w-[auto]">
+          <h1 className="text-[#1E3A2B] md:text-[42px] text-[38px] mt-[34px] font-[Gilroy-XBold] text-right">
+            Transparency and Accountability
+          </h1>
+          <p className="font-[Gilroy-Light] md:text-[22px] text-[16px] text-right">
+            At Vriksh, transparency is key. We provide our clients with detailed
+            insights into our tree planting processes and ensure accountability
+            by regularly monitoring the growth and development of the trees.
+          </p>
+        </div>
+        <div className="md:flex hidden md:w-[630px] w-[auto] my-[20px] mx-auto">
+          <img className="rounded-[20px]" src={img4} alt="image2 not found" />
+        </div>
       </div>
     </div>
   );
