@@ -18,8 +18,8 @@ export const Vhome = () => {
 
   return (
     <div className="bg-green-bg min-h-screen flex flex-col items-center text-white">
-      <header className="w-full py-2 xl:py-6 flex items-center justify-between bg-green-bg">
-        <h1 className="pl-[2rem] cs:pl-[5rem] xl:pl-[6.81rem] py-[1rem] lg:py-[2rem] pr-[4rem] text-[3rem] xl:text-[3rem] font-jostSemiBold font-medium">
+      <header className="w-full py-[8px] xl:py-6 flex items-center justify-between bg-green-bg">
+        <h1 className="pl-[2rem] cs:pl-[5rem] xl:pl-[6.81rem] py-[1rem] pr-[4rem] text-[3rem] xl:text-[3rem] font-jostSemiBold font-medium">
           Vriksh
         </h1>
         <div className="relative flex items-center">
