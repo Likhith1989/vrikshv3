@@ -1,10 +1,18 @@
 import tick from "../assets/tick.svg";
 import cross from "../assets/cross.svg";
+import useStore from "../store";
+import { useEffect, useRef } from "react";
 
 export const Subs = () => {
+  const setRef = useStore((state) => state.setRef);
+  const Ref = useRef(null);
+  useEffect(() => {
+    setRef(Ref.current);
+  }, [Ref]);
+
   return (
     <>
-      <div className="mt-12 mb-28 md:mb-32 md:mt-22">
+      <div className="mt-12 mb-28 md:mb-32 md:mt-22" ref={Ref}>
         <div className="text-center md:text-center font-jostSemiBold text-2xl md:text-4xl my-10 md:my-24">
           <h1>Play your part in saving the environment</h1>
         </div>

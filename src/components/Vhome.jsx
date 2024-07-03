@@ -1,11 +1,19 @@
 import React, { useState } from "react";
 import { FaBars } from "react-icons/fa";
+import useStore from "../store";
 
 export const Vhome = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  const Ref = useStore((state) => state.Ref);
+  const handle = () => {
+    if (Ref) {
+      Ref.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   return (
@@ -45,7 +53,10 @@ export const Vhome = () => {
               >
                 About
               </a>
-              <button className="bg-green-bg text-white w-[12rem] xl:w-[12rem] lg:w-[12rem]  xl:px-[0rem] xl:py-[0.3rem] rounded-[1rem] xl:text-xl text-lg text-center font-semibold font-jostSemiBold xl:mr-[4rem] lg:ml-5 mt-1 lg:p-[0.2rem] lg:mt-0">
+              <button
+                onClick={handle}
+                className="bg-green-bg text-white w-[12rem] xl:w-[12rem] lg:w-[12rem]  xl:px-[0rem] xl:py-[0.3rem] rounded-[1rem] xl:text-xl text-lg text-center font-semibold font-jostSemiBold xl:mr-[4rem] lg:ml-5 mt-1 lg:p-[0.2rem] lg:mt-0"
+              >
                 Plant Now
               </button>
             </nav>
@@ -63,7 +74,10 @@ export const Vhome = () => {
           live.
         </p>
         <div className="space-x-0 mb-[6rem] lg:mb-[6rem] md:mb-[4rem] flex flex-col md:flex-row items-center md:space-x-10 space-y-4 md:space-y-0">
-          <button className="bg-white text-green-bg mb-1 w-[14.25rem] font-jostSemiBold font-semibold text-[1.5rem] md:text-[2rem] px-6 py-[0.7rem] rounded-[1rem] hover:bg-gray-200">
+          <button
+            onClick={handle}
+            className="bg-white text-green-bg mb-1 w-[14.25rem] font-jostSemiBold font-semibold text-[1.5rem] md:text-[2rem] px-6 py-[0.7rem] rounded-[1rem] hover:bg-gray-200"
+          >
             Plant Now
           </button>
           <button className="bg-white text-green-bg w-[14.25rem] font-jostSemiBold font-semibold text-[1.5rem] md:text-[2rem] px-6 py-[0.7rem] rounded-[1rem] hover:bg-gray-200">
